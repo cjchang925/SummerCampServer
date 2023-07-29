@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.listen(process.env.PORT)
+const port = process.env.PORT || 3000;
+
+app.listen(port)
 
 const cors = require('cors')
 
@@ -11,6 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 
 let purchaseDB = [];
 let costDB = Array(10).fill(500);
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 const customSort = (a, b) => {
     const importanceA = parseInt(a.importance);
