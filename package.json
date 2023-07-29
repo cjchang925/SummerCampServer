@@ -7,8 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "",
-    "bump-version": "npm version patch"
+    "test": ""
   },
   "dependencies": {
     "cors": "^2.8.5",
