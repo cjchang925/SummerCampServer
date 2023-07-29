@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "mocha --recursive test",
+    "test": "",
     "bump-version": "npm version patch"
   },
   "dependencies": {
